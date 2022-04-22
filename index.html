@@ -1,0 +1,60 @@
+<html lang="pt-br">
+<head>
+    <title>Document</title>
+    <style>
+        *{margin: 0;}
+
+        body{background-color: dimgray;}
+
+        .container{border: 5px solid #745656;
+            width: 50%;
+            margin: auto;}
+
+        .container img{width: 25%;
+            height: 125px;}
+
+        .content-1{display: flex;
+            justify-content: space-between;}
+
+        #button-flex{display: flex;}
+        
+        #button-flex button{padding: 5px 10px;}
+
+        #button-flex p{padding: 10px 20px;
+            border-bottom: 2px solid black;
+            margin: 0 5px;}
+
+        .total{display: flex;
+            justify-content: space-between;
+            border-top: 10px solid #745656;}
+
+        #content-2{border-top: 5px solid #745656;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content-1">
+            <img src="https://i.pinimg.com/222x/ee/b8/4d/eeb84de76084f4ef08f5e184909eb55c.jpg">
+
+            <div id="produto-1">
+                <p id="NomeDoProduto">Caderno</p>
+
+                <div id="button-flex">
+                    <button id="buttonRemove-1">-</button>
+                    <p id="contador">1</p>
+                    <button id="buttonADD-1">+</button>
+                </div>
+            </div>
+
+            <p id="PreçoDoProduto">R$100</p>
+        </div>
+
+        <div class="total">
+            <p>Total:</p>
+            <p id="PreçoTotal">R$100</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
